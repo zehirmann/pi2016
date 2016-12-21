@@ -1,6 +1,4 @@
-# pi 2016
-
-
+# tuto git
 Pour configurer le git sous Windows:
 
 Téléchargez git sur https://git-scm.com/downloads
@@ -22,3 +20,11 @@ git config --global user.name "Vincent Montigny"		//en changeant le nom
 /*Pour cloner le répertoire de travail*/
 
 git clone http://github.com/zehirmann/pi2016.git
+
+/*Pour ajouter ses fichiers*/
+
+git add "mon fichier"
+
+git commit -m "ajout de mon fichier"
+
+git push -u origin master
