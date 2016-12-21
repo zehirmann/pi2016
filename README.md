@@ -16,6 +16,7 @@ git init
 /*Pour vous paramétrer dans le git*/
 
 git config --global user.email "vincent.montigny45@gmail.com"   //en changeant l'adresse
+
 git config --global user.name "Vincent Montigny"		//en changeant le nom
 
 /*Pour cloner le répertoire de travail*/
