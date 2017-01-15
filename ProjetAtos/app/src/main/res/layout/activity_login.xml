@@ -1,0 +1,156 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainrelative"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/rl_toolPar"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_authentification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00c4cc"
+             />
+        <EditText
+            android:id="@+id/login"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            android:hint="Email/Login "
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <EditText
+            android:id="@+id/password"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:hint="Password"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/cnfr_password"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Confirmer Password"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/nom_et"
+            android:layout_toRightOf="@id/img_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/cnfr_password"
+            android:layout_centerHorizontal="true"
+            android:hint="Nom"/>
+
+
+        <EditText
+            android:id="@+id/prenom_et"
+            android:layout_toRightOf="@id/img_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/nom_et"
+            android:layout_centerHorizontal="true"
+            android:hint="Nom"/>
+        <EditText
+            android:id="@+id/adresse_et"
+            android:layout_toRightOf="@id/img_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/prenom_et"
+            android:layout_centerHorizontal="true"
+            android:hint="Adresse"/>
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adresse_et"
+            android:theme="@style/Mybutton"
+            android:text="Sign In"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toolPar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"/>
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inscription"
+            android:textColor="#ff14fa"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
