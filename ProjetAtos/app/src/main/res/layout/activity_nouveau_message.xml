@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00c4cc"
+    >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textNousEcrire"
+                android:text="Nous ecrire"
+                android:textAlignment="center"
+                android:editable="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"
+                android:background="@color/colorLightBlue"
+                android:layout_marginBottom="100dp"
+                android:layout_alignParentTop="true"/>
+            <EditText
+                android:id="@+id/textViewObjectMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/textNousEcrire"
+                android:hint="Objet du message"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginBottom="44dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/textViewMsg"
+                android:layout_below="@+id/textViewObjectMsg"
+                android:hint="Laisser votre message ici"
+                android:gravity="left"
+                android:textSize="18dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewMsg"
+                android:id="@+id/buttonEnvMsg"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/validate"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewAdv"
+                android:textAlignment="center"
+                android:editable="false"
+                android:text="Pour avoir une bonne compréhension de votre demande, merci de bien vouloir préciser des informations comme numéro de dossier, nom et prenom."
+                android:layout_above="@+id/textViewObjectMsg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="32dp" />
+        </RelativeLayout>
+    </ScrollView>
